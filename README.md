@@ -27,3 +27,7 @@ books/create
 
 ( visit the url in your browser before trying to remotely post data to it, the page displays the required form fields )
 
+# TODO
+
+Validate the post data values, currently only validates required fields have been populated.
+
