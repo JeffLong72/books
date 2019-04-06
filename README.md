@@ -1,15 +1,15 @@
 # books
 Codeignitor MVC
 
-INSTALL REQUIREMENTS
+# INSTALL REQUIREMENTS
 
 Codeignitor 3.x
 
-SET UP
+# SET UP
 
 Import the sql file: sql/db.sql
 
-GET URL(S)
+# GET URL(S)
 
 books/category/all/author/[the-author-name]
 
@@ -19,6 +19,6 @@ books/category/[the-category-name]
 
 books/category/[the-category-name]/author/[the-author-name]
 
-CREATE URL
+# CREATE URL
 
 books/create
