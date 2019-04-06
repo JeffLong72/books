@@ -1,5 +1,5 @@
-# books
-Codeignitor MVC
+# Project: Books
+Based on Codeignitor MVC framework
 
 # INSTALL REQUIREMENTS
 
