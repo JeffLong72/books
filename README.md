@@ -25,3 +25,5 @@ books/category/[the-category-name]/author/[the-author-name]
 
 books/create
 
+( visit the url in your browser before trying to remotely post data to it, the page displays the required form fields )
+
