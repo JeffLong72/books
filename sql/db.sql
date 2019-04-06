@@ -36,7 +36,7 @@ INSERT INTO `books` (`id`, `isbn`, `title`, `author`, `date_added`, `date_update
 -- Dumping structure for table books.books_categories
 CREATE TABLE IF NOT EXISTS `books_categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `book_id` int(11) DEFAULT NULL,
+  `book_id` int(11) DEFAULT NULL COMMENT 'reference, table: books, col: id',
   `category` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `date_added` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `date_updated` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `books_categories` (
 -- Dumping data for table books.books_categories: ~5 rows (approximately)
 /*!40000 ALTER TABLE `books_categories` DISABLE KEYS */;
 INSERT INTO `books_categories` (`id`, `book_id`, `category`, `date_added`, `date_updated`, `active`, `status`) VALUES
-	(1, 1, 'PHP', '2019-04-06 10:51:50', '2019-04-06 10:52:03', 1, 0),
+	(1, 1, 'PHP', '2019-04-06 10:51:50', '2019-04-06 14:49:13', 1, 0),
 	(2, 1, 'Javascript', '2019-04-06 10:52:27', '2019-04-06 10:53:00', 1, 0),
 	(3, 2, 'Linux', '2019-04-06 10:52:36', '2019-04-06 10:53:01', 1, 0),
 	(4, 3, 'Linux', '2019-04-06 10:52:52', '2019-04-06 10:53:02', 1, 0),
@@ -80,3 +80,4 @@ INSERT INTO `books_price` (`id`, `book_id`, `cost`, `currency`, `date_added`, `d
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
