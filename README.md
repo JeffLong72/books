@@ -29,5 +29,5 @@ books/create
 
 # TODO
 
-Validate the post data values, currently only validates required fields have been populated.
+Validate the post data values, currently only validates that required fields have been populated.
 
